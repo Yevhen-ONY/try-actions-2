@@ -1,6 +1,12 @@
-name: Deploy Project
+name: Test Build Deploy 
 
-on: [push, workflow_dispatch]
+on:
+  pull_request:
+    types:
+      - opened 
+
+  workflow_dispatch:
+
 
 jobs:
   test:
